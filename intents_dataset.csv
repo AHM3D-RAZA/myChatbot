@@ -1,0 +1,302 @@
+text,intent
+hi,greeting
+hello,greeting
+hey,greeting
+howdy,greeting
+wassupppp,greeting
+s,greeting
+hola,greeting
+good morning,greeting
+good afternoon,greeting
+good evening,greeting
+yo,greeting
+hey,greeting
+hi,greeting
+greeting,greeting
+hey,greeting
+hello,greeting
+hii,greeting
+helo,greeting
+heyy,greeting
+salutation,greeting
+yo good,greeting
+hiya,greeting
+heya,greeting
+morning,greeting
+sup,greeting
+bye,goodbye
+later,goodbye
+goodbye,goodbye
+care,goodbye
+adio,goodbye
+tomorrow,goodbye
+soon,goodbye
+catch later,goodbye
+farewell,goodbye
+leave,goodbye
+get to,goodbye
+later,goodbye
+bye bye,goodbye
+good bye,goodbye
+cya,goodbye
+ya,goodbye
+ttyl,goodbye
+peace,goodbye
+easy,goodbye
+later,goodbye
+long,goodbye
+,goodbye
+bye,goodbye
+adieu,goodbye
+byee,goodbye
+ciao,goodbye
+tell joke,joke
+joke,joke
+tell funny,joke
+laugh,joke
+get joke,joke
+funny,joke
+tell dad joke,joke
+giggle,joke
+pun,joke
+need laugh,joke
+get good liner,joke
+humor,joke
+crack joke,joke
+know joke,joke
+want hear joke,joke
+entertain joke,joke
+tell,joke
+share funny story,joke
+joke,joke
+tickle funny bone,joke
+use laugh,joke
+humorous,joke
+jest,joke
+joke,joke
+,joke
+want book appointment,appointment_booking
+schedule visit,appointment_booking
+book consultation,appointment_booking
+need doctor,appointment_booking
+like doctor,appointment_booking
+set appointment week,appointment_booking
+appointment,appointment_booking
+schedule appointment online,appointment_booking
+need book checkup,appointment_booking
+doctor available book,appointment_booking
+need medical consultation,appointment_booking
+soon book visit,appointment_booking
+book appointment,appointment_booking
+want schedual checkup,appointment_booking
+set doctor visit,appointment_booking
+need arrange appointment,appointment_booking
+schedule doctor visit,appointment_booking
+book consultation,appointment_booking
+want reserve slot doctor,appointment_booking
+need fix appoitment,appointment_booking
+arrange doctor visit,appointment_booking
+want appointment book,appointment_booking
+book consultation,appointment_booking
+want secure doctor appointment,appointment_booking
+want boook apoitmet,appointment_booking
+want cancel appointment,appointment_cancellation
+reschedule booking,appointment_cancellation
+will able come appointment,appointment_cancellation
+cancel consultation,appointment_cancellation
+need change appointment time,appointment_cancellation
+postpone appointment,appointment_cancellation
+need reschedule consultation,appointment_cancellation
+booking day,appointment_cancellation
+conflict appointment,appointment_cancellation
+cancel online booking,appointment_cancellation
+need adjust appointment,appointment_cancellation
+change appointment date,appointment_cancellation
+cancel doctor visit,appointment_cancellation
+want cancel schedule appointment,appointment_cancellation
+cancel appointment,appointment_cancellation
+need cancelle appointment,appointment_cancellation
+reschedule appointment day,appointment_cancellation
+want cancel consult,appointment_cancellation
+cancel appointment,appointment_cancellation
+cancel booking,appointment_cancellation
+cancel meeting doctor,appointment_cancellation
+need withdraw appointment,appointment_cancellation
+cancel visit,appointment_cancellation
+want cancel apointment,appointment_cancellation
+cancel session doctor,appointment_cancellation
+doctor available,doctor_availability
+clinic timing,doctor_availability
+doctor free sunday,doctor_availability
+visit evening,doctor_availability
+time doctor start see patient,doctor_availability
+doctor available today,doctor_availability
+work hour doctor,doctor_availability
+weekend consultation,doctor_availability
+checkup holiday,doctor_availability
+doctor night,doctor_availability
+late doctor patient,doctor_availability
+good time visit,doctor_availability
+schedule consultation,doctor_availability
+slot open today,doctor_availability
+time docter,doctor_availability
+appoinment,doctor_availability
+doctor finish day,doctor_availability
+clinic open hour,doctor_availability
+doctor office hour,doctor_availability
+evening appointment,doctor_availability
+want know docter available hour,doctor_availability
+time clinic close,doctor_availability
+doctor duty,doctor_availability
+doctor availble,doctor_availability
+book slot morning,doctor_availability
+headache,headache_advice
+head throb,headache_advice
+stop headache,headache_advice
+migraine relief tip,headache_advice
+help pound head,headache_advice
+tension temple,headache_advice
+cluster headache relief,headache_advice
+sinus pressure headache,headache_advice
+headache cry,headache_advice
+head hurt,headache_advice
+head feel heavy,headache_advice
+headache morning,headache_advice
+headache,headache_advice
+remedy head pain,headache_advice
+alleviat migraine,headache_advice
+suggestion headache relief,headache_advice
+cure throb head,headache_advice
+advice reduce head pain,headache_advice
+ease severe headache,headache_advice
+work pain,headache_advice
+help headache,headache_advice
+relieve headache fast,headache_advice
+good headache remedy,headache_advice
+need relief head pain,headache_advice
+hav hedache tip,headache_advice
+throat hurt,sore_throat_advice
+sore throat remedy,sore_throat_advice
+treat throat pain,sore_throat_advice
+hurt swallow,sore_throat_advice
+throat scratchy,sore_throat_advice
+sharp pain swallow,sore_throat_advice
+throat inflammation remedy,sore_throat_advice
+throat hurt,sore_throat_advice
+persistent sore throat,sore_throat_advice
+throat feel dry,sore_throat_advice
+burn sensation throat,sore_throat_advice
+good medicine sore throat,sore_throat_advice
+sore throat,sore_throat_advice
+remedy throat pain,sore_throat_advice
+sore throat,sore_throat_advice
+suggestion throat relief,sore_throat_advice
+help throat discomfort,sore_throat_advice
+ease throat pain,sore_throat_advice
+advice scratchy throat,sore_throat_advice
+good home remedy sore throat,sore_throat_advice
+need relief throat pain,sore_throat_advice
+cure sore throt quickly,sore_throat_advice
+work burn throat,sore_throat_advice
+need tip treat sore throat,sore_throat_advice
+torot hurt idea,sore_throat_advice
+reduce fever,fever_advice
+high temperature,fever_advice
+fever,fever_advice
+body feel hot,fever_advice
+fever symptom treatment,fever_advice
+chill fever remedy,fever_advice
+lower fever quickly,fever_advice
+fever body ache,fever_advice
+home remedy fever,fever_advice
+ibuprofen fever,fever_advice
+visit doctor fever,fever_advice
+good food eat fever,fever_advice
+lower fever,fever_advice
+remedy high fever,fever_advice
+cool fevr,fever_advice
+suggestion manage fever,fever_advice
+good fever remedy,fever_advice
+control rise temperature,fever_advice
+advice treat fever home,fever_advice
+help fever chill,fever_advice
+need tip reduce fever,fever_advice
+relief frm fever,fever_advice
+suggest fever treatment,fever_advice
+work well lower fever,fever_advice
+hav high temprature help,fever_advice
+clinic locate,location_inquiry
+location,location_inquiry
+address,location_inquiry
+clinic direction,location_inquiry
+need direction clinic,location_inquiry
+clinic,location_inquiry
+exact address clinic,location_inquiry
+office situate,location_inquiry
+provide clinic location,location_inquiry
+find clinic,location_inquiry
+visit consultation,location_inquiry
+tell reach clinic,location_inquiry
+location clinic,location_inquiry
+fid clinic,location_inquiry
+clinic address,location_inquiry
+need know clinic whereabout,location_inquiry
+clinic base,location_inquiry
+share clinic location,location_inquiry
+clinic street address,location_inquiry
+locate clinic,location_inquiry
+direction clinic,location_inquiry
+locat clinic,location_inquiry
+exactly clinic,location_inquiry
+need map clinic,location_inquiry
+wher clinic locate,location_inquiry
+emergency number,emergency_contact
+contact emergency,emergency_contact
+urgent help need,emergency_contact
+medical emergency,emergency_contact
+need immediate help,emergency_contact
+number emergency,emergency_contact
+reach emergency medical service,emergency_contact
+case medical emergency,emergency_contact
+contact urgent medical assistance,emergency_contact
+helpline medical emergency,emergency_contact
+fast way emergency help,emergency_contact
+provide emergency contact number,emergency_contact
+number,emergency_contact
+touch emergency service,emergency_contact
+number emergency,emergency_contact
+need urgnt medical contact,emergency_contact
+help need emergency assistance,emergency_contact
+emergency hotline,emergency_contact
+provide emergency contact,emergency_contact
+immediately emergency,emergency_contact
+emergency contact info plz,emergency_contact
+dial emergency,emergency_contact
+emergency hotline,emergency_contact
+emergency contact,emergency_contact
+whot emergency number,emergency_contact
+refill prescription,prescription_refill
+need refill medication,prescription_refill
+renew prescription online,prescription_refill
+request prescription renewal,prescription_refill
+offer prescription renewal,prescription_refill
+prescription refill phone,prescription_refill
+refill prescription,prescription_refill
+online service prescription refill,prescription_refill
+need doctor approval refill,prescription_refill
+process get prescription refill,prescription_refill
+medication refill,prescription_refill
+repeat prescription appointment,prescription_refill
+need refill prescription soon,prescription_refill
+renew prescription,prescription_refill
+possible refill medication online,prescription_refill
+help prescription refill,prescription_refill
+step needd prescription refill,prescription_refill
+want update prescription renewal,prescription_refill
+order refill medicine,prescription_refill
+offer online prescription renewal,prescription_refill
+reaply prescription,prescription_refill
+prescription refill visit,prescription_refill
+need reissue prescription,prescription_refill
+guide refill medication,prescription_refill
+need refil prescription,prescription_refill

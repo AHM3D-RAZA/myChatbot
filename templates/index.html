@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Chatbot Helper</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #chat-container {
+            width: 420px;
+            height: 500px; /* Fixed height */
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #chat-header {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        #chat-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto; /* Scroll inside the chat area */
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            max-height: 380px; /* Ensures it doesn’t overflow */
+        }
+
+        .message {
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 10px;
+            max-width: 75%;
+            display: inline-block;
+            word-wrap: break-word;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .user-message {
+            background: #ff4b2b;
+            color: white;
+            align-self: flex-end;
+            text-align: right;
+            float: right;
+            clear: both;
+        }
+
+        .bot-message {
+            background: #444;
+            color: white;
+            float: left;
+            clear: both;
+        }
+
+        #input-area {
+            display: flex;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #user-input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 14px;
+        }
+
+        #user-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        #send-button {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            border: none;
+            padding: 12px 16px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        #send-button:hover {
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">Doctor's Chatbot Helper</div>
+        <div id="chat-messages"></div>
+        <div id="input-area">
+            <input type="text" id="user-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        }
+
+        async function sendMessage() {
+            const userInput = document.getElementById('user-input');
+            const chatMessages = document.getElementById('chat-messages');
+
+            if (userInput.value.trim() === "") return;
+
+            chatMessages.innerHTML += `<p class="message user-message"><strong>You:</strong> ${userInput.value}</p>`;
+            chatMessages.scrollTop = chatMessages.scrollHeight; // Auto-scroll
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: userInput.value })
+                });
+                const data = await response.json();
+                chatMessages.innerHTML += `<p class="message bot-message"><strong>Bot:</strong> ${data.reply}</p>`;
+            } catch (error) {
+                console.error('Error:', error);
+                chatMessages.innerHTML += `<p class="message bot-message"><strong>Bot:</strong> Sorry, I'm having trouble.</p>`;
+            }
+
+            chatMessages.scrollTop = chatMessages.scrollHeight; // Auto-scroll to latest message
+            userInput.value = "";
+        }
+    </script>
+</body>
+</html>
