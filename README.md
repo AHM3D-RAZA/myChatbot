@@ -1,5 +1,4 @@
 # myChatbot
- SIMPLE INTENT BASED CHATBOT
 This chatbot is trained on an intents.json file which contains tags with patterns and responses.
 I trained the bot with SVM, XGBoost, Random Forest and Logistic Regression. Their results are attached below. I also developed a simple GUI for the bot using HTML, CSS and used Flask for localhost server.
 
